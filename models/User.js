@@ -19,15 +19,18 @@ const userSchema = new Schema(
       // comment out match if it doesnt work
       match: [/.+@.+\..+/, "Please enter a valid e-mail address"],
     },
-    thoughts: {
-      type: String,
-      // neet to do arry of id to thoughts model
-    },
+    thoughts: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "thought",
+      },
+    ],
+
     // I think this is right for friends.
     friends: [
       {
         type: Schema.Types.ObjectId,
-        ref: "User",
+        ref: "user",
       },
     ],
   },

@@ -23,17 +23,17 @@ const thoughtSchema = new Schema(
     reactions: [reactionSchema],
   },
   {
+    id: false,
     toJSON: {
       getters: true,
       virtuals: true,
     },
-    id: false,
   }
   // Virtual to get the total count of reactions on retrieval
 );
 
-reactionSchema.virtual("reactionCount").get(function () {
-  return this.reaction.length;
+thoughtSchema.virtual("reactionCount").get(function () {
+  return this.reactions.length;
 });
 
 const Thought = model("thought", thoughtSchema);
