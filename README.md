@@ -19,5 +19,5 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 Here is a video highlighting the project!
 
-[Demo for The Social Network](https://github.com/matiassingers/awesome-readme)
+[Demo for The Social Network](https://drive.google.com/file/d/1pZK79EDDAvDVx3mMonEQe1wYDi_6t1d0/view?usp=drive_link)
 
